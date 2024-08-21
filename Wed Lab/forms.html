@@ -17,9 +17,99 @@
         - PATCH
         - DELETE
      -->
-    <form action="/search" method="GET" enctype="multipart/form-data">
-        <input type="text" name="product_name">
-        <input type="submit">
+    <form action="#" method="GET" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Enter username</label>
+                </td>
+                <td>
+                    <input type="text" id="uname" required placeholder="Enter username" name="user_name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="umail">Enter Email</label>
+                </td>
+                <td>
+                    <input type="email" id="umail" placeholder="Enter Email" name="user_mail">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" placeholder="Enter Password" name="userpwd">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Pic</td>
+                <td>
+                    <input type="file" name="userpic">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="o">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Country</td>
+                <td>
+                    <select name="country">
+                        <!-- <option>Select Country</option>
+                        <option value="ind">India</option>
+                        <option value="eng">England</option>
+                        <option value="usa">USA</option>
+                        <option value="ch">China</option>
+                        <option value="sl">Sri Lanka</option> -->
+
+                        <option>Select Country</option>
+                        <optgroup label="Asia">
+                            <option value="ind">India</option>
+                            <option value="ch">China</option>
+                            <option value="sl">Sri Lanka</option>
+                        </optgroup>
+
+                        <optgroup label="Europe">
+                            <option value="eng">England</option>
+                            <option value="ger">Germany</option>
+                            <option value="fr">France</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox" value="btech"> Btech
+                    <input type="checkbox" value="mtech"> Mtech
+                    <input type="checkbox" value="bca"> BCA
+                    <input type="checkbox" value="mca"> MCA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
     </form>
     
 </body>

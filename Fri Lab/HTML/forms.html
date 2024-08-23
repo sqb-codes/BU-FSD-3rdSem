@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- 
+        Methods
+        - GET (By Default)
+        - POST
+        - PUT
+        - DELETE
+        - UPDATE
+        - PATCH
+     -->
+    <form action="#" method="POST" enctype="">
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Enter your name</label>
+                </td>
+                <td>
+                    <input type="text" id="uname" name="username" value="Ravi">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your Email ID</td>
+                <td>
+                    <input type="text" name="usermail">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter your Password</td>
+                <td>
+                    <input type="password" name="userpwd">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select your city</td>
+                <td>
+                    <select name="city">
+                        <option>Select City</option>
+                        <!-- <option value="mum">Mumbai</option>
+                        <option value="del">Delhi</option>
+                        <option value="noi">Noida</option>
+                        <option value="pun">Pune</option>
+                        <option value="che">Chennai</option> -->
+                        <optgroup label="Maharastra">
+                            <option value="mum">Mumbai</option>
+                            <option value="pun">Pune</option>
+                        </optgroup>
+
+                        <optgroup label="Uttar Pradesh">
+                            <option value="noi">Noida</option>
+                            <option value="luc">Lucknow</option>
+                        </optgroup>
+
+                        <optgroup label="Gujrat">
+                            <option value="noi">Ahemdabad</option>
+                            <option value="luc">Surat</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Profile Pic</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> BBA
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="/register" method="" enctype="">
+
+    </form>
+
+    <form action="/search" method="" enctype="">
+
+    </form>
+    
+</body>
+</html>

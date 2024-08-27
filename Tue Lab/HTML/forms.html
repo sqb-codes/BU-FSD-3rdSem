@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- 
+        Methods
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - PATCH
+        - UPDATE
+     -->
+    <!-- <form action="/login" method="get">
+        <input type="submit">
+    </form> -->
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Enter Name</label>
+                </td>
+                <td>
+                    <input type="text" name="username" id="uname" required placeholder="Enter Name">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" name="usermail" value="ravi12@gmail.com" 
+                    required placeholder="Enter Email" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="userpwd" placeholder="Enter Password">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                    <input type="time">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select City</td>
+                <td>
+                    <select name="city">
+                        <option>Select City</option>
+                        <!-- <option value="mumbai">Mumbai</option>
+                        <option value="noida">Noida</option>
+                        <option value="luck">Lucknow</option>
+                        <option value="pune">Pune</option> -->
+                        <optgroup label="Maharastra">
+                            <option value="">Mumbai</option>
+                            <option value="">Pune</option>
+                        </optgroup>
+
+                        <optgroup label="Rajasthan">
+                            <option value="">Jaipur</option>
+                            <option value="">Udaipur</option>
+                        </optgroup>
+
+                        <optgroup label="UP">
+                            <option value="">Noida</option>
+                            <option value="">Lucknow</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox" name="course" value="btech"> Btech
+                    <input type="checkbox" name="course" value="mtech"> Mtech
+                    <input type="checkbox" name="course" value="bca"> BCA
+                    <input type="checkbox" name="course" value="bba"> BBA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- <form action="/search" method="get">
+        <input type="submit">
+    </form> -->
+    
+</body>
+</html>

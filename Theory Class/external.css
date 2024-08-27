@@ -1,0 +1,14 @@
+/* 
+    selector - h2 - element selector
+    {} - expression
+    color - property
+    green - value 
+*/
+
+h2 {
+    color: green !important;
+}
+
+h2 {
+    color: black;
+}

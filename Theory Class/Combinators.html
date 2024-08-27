@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent > h2 {
+            color: red;
+        }
+
+        #parent + h2 {
+            color: blue;
+        }
+
+        #parent ~ h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Combinators</h1>
+
+    <div id="parent">
+        <h2>This heading is inside parent div</h2>
+        <h2>This heading is also inside parent div</h2>
+        <div class="child">
+            <h2>This heading is inside child div</h2>
+            <h2>This heading is also inside child div</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>This heading is outside parent div</h2>
+    <h2>This heading is outside parent div</h2>
+    <h2>This heading is outside parent div</h2>
+    
+</body>
+</html>

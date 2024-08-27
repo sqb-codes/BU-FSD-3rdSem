@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #section-1 div h2 {
+            color: red;
+        } */
+
+        /* div {
+            background-color: red;
+        } */
+
+        /* #section-1 {
+            background-color: lightcoral;
+        } */
+
+        /* .child {
+            background-color: lightcoral;
+        } */
+
+        /* #section-1 .child {
+            background-color: lightblue;
+        } */
+
+        /* #section-1.section {
+            background-color: lightblue;
+        } */
+
+        #section-1,
+        #section-3 {
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Selectors in CSS</h1>
+
+    <!-- 
+        ID - Identity
+        - to represent an element uniquely
+        - represented by #
+        - a tag can have only one id
+        - an id cannot br repeated on a single page
+        Class - Grouping
+        - to represent a group
+        - represented by .
+        - a tag can have multiple classes
+        - a class can be repeated any number of times on a page
+     -->
+
+    <div id="section-1" class="section">
+        <h2>This is inside div</h2>
+        <h2>This is also inside div</h2>
+        <div class="child">
+            <h2 class="title">This is inside another div</h2>
+            <h2>This is also inside another div</h2>
+        </div>
+    </div>
+
+    <div id="section-2">
+        <h2>This is inside div</h2>
+        <h2>This is also inside div</h2>
+        <div class="child">
+            <h2>This is inside another div</h2>
+            <h2 class="title">This is also inside another div</h2>
+        </div>
+    </div>
+
+    <div id="section-3">
+        <h2>This is inside div</h2>
+        <h2>This is also inside div</h2>
+        <div class="child">
+            <h2 class="title">This is inside another div</h2>
+            <h2>This is also inside another div</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

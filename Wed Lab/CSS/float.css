@@ -1,0 +1,23 @@
+/* :after - Pseudo Element */
+.row::after {
+    content: "";
+    /* clearfix */
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    background-color: lightcoral;
+    float: left;
+    width: 40%;
+}
+
+.col-2 {
+    float: right;
+    background-color: lightgreen;
+    width: 40%;
+}
+
+.next-row {
+    background-color: lightpink;
+}

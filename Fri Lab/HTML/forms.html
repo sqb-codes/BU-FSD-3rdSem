@@ -25,20 +25,58 @@
                     <label for="uname">Enter your name</label>
                 </td>
                 <td>
-                    <input type="text" id="uname" name="username" value="Ravi">
+                    <input type="text" id="uname" name="username" value="Ravi" placeholder="Enter Name" readonly>
                 </td>
             </tr>
             <tr>
                 <td>Enter your Email ID</td>
                 <td>
-                    <input type="text" name="usermail">
+                    <input type="email" autocomplete="off" name="usermail" placeholder="Enter Email ID" autofocus>
                 </td>
             </tr>
 
             <tr>
                 <td>Enter your Password</td>
                 <td>
-                    <input type="password" name="userpwd">
+                    <input type="password" name="userpwd" placeholder="Enter Password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                    <input type="time">
+                    <input type="datetime-local">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="500" max="1000" onchange="op.value=value">
+                    <output id="op">500</output>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="50" max="100"></progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Search Here</td>
+                <td>
+                    <input type="search" placeholder="Search here">
                 </td>
             </tr>
 
@@ -50,6 +88,21 @@
 
                     <input type="radio" id="female" name="gender" value="f">
                     <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="country-choice">Choose a country:</label>
+                </td>
+                <td>
+                    <input list="country-options" id="country-choice" name="country-choice">
+                    <datalist id="country-options">
+                        <option value="Australia">
+                        <option value="Austria">
+                        <option value="America">
+                        <option value="Nepal">
+                    </datalist>
                 </td>
             </tr>
 
@@ -95,6 +148,13 @@
                     <input type="checkbox"> Mtech
                     <input type="checkbox"> BCA
                     <input type="checkbox"> BBA
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter your comments</td>
+                <td>
+                    <textarea cols="100" rows="10" spellcheck="true"></textarea>
                 </td>
             </tr>
 

@@ -1,0 +1,34 @@
+/* * - Universal Selector */
+
+* {
+    margin: 0px;
+}
+
+div {
+    background-color: lightcoral;
+    height: 100vh;
+    border-bottom: 1px solid black;
+    /* background-repeat: space; */
+    /* background-repeat: round; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#div_1 {
+    background-image: url("images/WebImages/avengers-thor.jpg");
+}
+#div_2 {
+    background-image: url("images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
+#div_3 {
+    background-image: url("images/WebImages/Terminator002.jpg");
+}
+#div_4 {
+    background-image: url("images/WebImages/chris_hemsworth__angry_thor.jpg");
+}
+#div_5 {
+    background-image: url("images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");
+}
+#div_6 {
+    background-image: url("images/WebImages/the-joker-black-white.jpeg");
+}

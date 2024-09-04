@@ -2,6 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -77,9 +78,41 @@ ul {
 #header .user-links ul li {
     display: inline;
     margin: 0px 15px;
+    padding: 0px 15px;
     font-size: 20px;
 }
 
 #header .user-links ul li a {
     color: #000;
+}
+
+#main-nav {
+    background-color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    width: 9%;
+    text-align: center;
+}
+#main-nav ul li a {
+    display: block;
+    padding: 15px;
+
+}
+
+#main-nav ul li span {
+    display: block;
+}
+
+#section-2 .col {
+    display: inline-block;
+    width: 33%;
+    margin-right: 2px;
+}
+#section-2 .col img {
+    width: 100%;
 }

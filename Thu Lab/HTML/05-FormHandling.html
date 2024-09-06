@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- Login Form -->
+    <!-- <form action="/login" method="" enctype="">
+        <input type="submit">
+    </form> -->
+
+    <!-- 
+        Methods - GET(By Default), POST, UPDATE, DELETE, PUT, PATCH
+     -->
+
+    <!-- Register Form -->
+    <form action="/register" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" name="username" placeholder="Enter your name" required autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" name="usermail" placeholder="Enter your mail" required value="ram@gmail.com" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="userpwd" placeholder="Enter your password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                </td>
+                <td>
+                    <input type="time">
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Phone number</td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="500" max="2000" min="100" onchange="op.value=value">
+                    <output id="op">500</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Profile Pic</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Country</td>
+                <td>
+                    <select name="" id="">
+                        <option>Select Country</option>
+                        <option value="in">India</option>
+                        <option value="ch">China</option>
+                        <option value="us">USA</option>
+                        <option value="uk">England</option>
+                        <option value="fr">France</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> BBA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+
+    <!-- Search Form -->
+    <!-- <form action="/search" method="" enctype="">
+        <input type="submit">
+    </form> -->
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+* {
+    /* margin: 0px; */
+    padding: 0px;
+}
+
+/* 
+    Pseudo Elements
+*/
+.row::after {
+    content: "";    /*Must have to provide inside ::after or ::before*/
+    clear: both;    /* Will clear the floated area */
+    display: block; /* Convert inline element to block element. because ::after is an inline element */
+}
+
+#section-1 {
+    border: 5px solid red;
+}
+
+.col {
+    height: 300px;
+}
+
+/* .col-1, .col-2 {
+    height: 300px;
+} */
+
+.col-1 {
+    background-color: lightcoral;
+    width: 40%;
+    float: left;
+}
+.col-2 {
+    background-color: lightgreen;
+    width: 40%;
+    float: right;
+}
+
+#section-2 {
+    border: 5px solid blue;
+}

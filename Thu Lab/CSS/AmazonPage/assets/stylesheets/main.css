@@ -1,0 +1,74 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Sprite */
+.sprite-sheet {
+    background-image: url("https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB600086755_.png");
+}
+
+/* Container - Configurable */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+    background-color: #131921;
+}
+
+#header .logo a {
+    color: #fff;
+}
+
+#header .logo-sprite {
+    display: inline-block;
+    vertical-align: top;
+    width: 97px;
+    height: 30px;
+    background-position: -10px -51px;
+}
+
+/* Navigation */
+#main-nav {
+
+}
+
+/* Banner */
+/* Main */
+/* Footer */

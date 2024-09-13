@@ -1,0 +1,35 @@
+/* Universal Selector */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    border: 6px solid black;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    height: 400px;
+    width: 40%;
+    float: left;
+    border: 2px solid red;
+    /* background-color: lightcoral; */
+}
+
+.col-2 {
+    height: 400px;
+    width: 40%;
+    float: right;
+    border: 2px solid blue;
+    /* background-color: lightgreen; */
+}
+
+.next-div {
+    background-color: lightsalmon;
+}

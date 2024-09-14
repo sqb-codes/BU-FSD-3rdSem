@@ -1,0 +1,74 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-block {
+    display: block;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+
+}
+
+/* Main Navigation */
+#main-nav {
+    
+}
+
+/* Banner */
+#banner {
+
+}
+
+/* Content */
+#content {
+
+}
+
+/* Footer */
+#footer {
+
+}
+
+
+/* Page Specific CSS */
+

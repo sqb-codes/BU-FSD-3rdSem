@@ -1,0 +1,141 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Assistant", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-block {
+    display: block;
+}
+
+.sprite-sheet {
+    background-image: url("https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png");
+}
+
+.container {
+    width: 1750px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+    padding-top: 20px;
+}
+
+#header .col-1 {
+    width: 40%;
+}
+#header .col-2 {
+    width: 50%;
+}
+#header .logo {
+    width: 10%;
+}
+
+#header .logo-sprite {
+    display: block;
+    height: 36px;
+    width: 53px;
+    background-position: -287px -62px;
+}
+
+#header .search {
+    width: 75%;
+}
+#header .search input[type="text"] {
+    width: 90%;
+    height: 35px;
+}
+
+
+#header .nav-tools {
+    width: 25%;
+    text-align: center;
+}
+#header .nav-tools span {
+    display: block;
+}
+
+#header .nav-tools ul li {
+    display: inline-block;
+    width: 30%;
+}
+
+#header .nav-tools ul li a {
+    color: #282c3f;
+    font-size: 14px;
+}
+
+/* Main Navigation */
+#main-nav {
+    width: 85%;    
+}
+
+#main-nav ul li {
+    display: inline-block;
+    padding-top: 10px;
+}
+#main-nav ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 0px 15px 15px;
+    text-transform: uppercase;
+    color: #282c3f;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+/* Banner */
+#banner {
+
+}
+
+/* Content */
+#content {
+
+}
+
+/* Footer */
+#footer {
+
+}
+
+
+/* Page Specific CSS */
+

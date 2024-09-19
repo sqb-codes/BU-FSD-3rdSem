@@ -50,10 +50,24 @@ ul {
 /* Header */
 #header {
     background-color: #131921;
+    padding: 10px 0px 0px;
 }
 
-#header .logo a {
+#header .logo {
+    width: 8%;
+}
+#header .location {
+    width: 12%;
+}
+#header .search {
+    width: 60%;
+    margin-left: 10px;
+}
+
+#header a {
     color: #fff;
+    display: block;
+    padding: 10px;
 }
 
 #header .logo-sprite {
@@ -62,6 +76,49 @@ ul {
     width: 97px;
     height: 30px;
     background-position: -10px -51px;
+}
+
+#header a:hover {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+#header .location-sprite {
+    display: inline-block;
+    background-position: -71px -378px;
+    width: 15px;
+    height: 18px;
+}
+
+#header .search select {
+    height: 40px;
+    width: 54px;
+}
+#header .search input[type="text"] {
+    width: 90%;
+    height: 40px;
+    border: none;
+}
+#header .search button {
+    background-color: #F3A847;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: -39px;
+    margin-top: -1px;
+}
+
+#nav-tools {
+    width: 19%;
+}
+#nav-tools ul li {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
 }
 
 /* Navigation */

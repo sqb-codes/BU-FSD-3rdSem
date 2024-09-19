@@ -7,6 +7,7 @@
 
 body {
     font-family: "Assistant", sans-serif;
+    background-color: #FEFEFE;
 }
 
 a {
@@ -54,7 +55,13 @@ ul {
 
 /* Header */
 #header {
+    background-color: #fff;
     padding-top: 20px;
+    position: fixed;
+    /* bottom: 0px; */
+    top: 0px;
+    width: 100%;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
 }
 
 #header .col-1 {
@@ -86,27 +93,72 @@ ul {
 #header .nav-tools {
     width: 25%;
     text-align: center;
+    position: relative;
 }
 #header .nav-tools span {
     display: block;
 }
 
-#header .nav-tools ul li {
+#header .nav-tools > ul > li {
     display: inline-block;
     width: 30%;
+    /* position: relative; */
 }
 
-#header .nav-tools ul li a {
+#header .nav-tools > ul > li > a {
     color: #282c3f;
     font-size: 14px;
+    padding-bottom: 15px;
+    display: block;
+    position: relative;
+}
+
+#header .nav-tools ul li a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #F16565;
+    display: none;
+}
+
+#header .nav-tools .dropdown {
+    position: absolute;
+    background-color: #fff;
+    left: -50%;
+    width: 150%;
+    text-align: left;
+    padding: 15px;
+    display: none;
+}
+#header .nav-tools .dropdown h3,
+#header .nav-tools .dropdown p {
+    margin-bottom: 15px;
+}
+
+#header .nav-tools .dropdown a {
+    color: #282c3f;
+    font-size: 14px;
+    padding-bottom: 15px;
+    display: block;
+}
+
+#header .nav-tools ul li:hover .dropdown {
+    display: block;
+}
+#header .nav-tools ul li:hover a::after {
+    display: block;
 }
 
 /* Main Navigation */
 #main-nav {
-    width: 85%;    
+    width: 85%;   
+    position: relative; 
 }
 
-#main-nav ul li {
+#main-nav > ul > li {
     display: inline-block;
     padding-top: 10px;
 }
@@ -120,10 +172,25 @@ ul {
     font-weight: 700;
 }
 
+#main-nav ul li .dropdown {
+    position: absolute;
+    background-color: #fff;
+    width: 160%;
+    left: 0px;
+    display: none;
+}
+
+#main-nav ul li:hover .dropdown {
+    display: block;
+}
 
 /* Banner */
 #banner {
-
+    margin-top: 100px;
+}
+#banner img {
+    width: 50%;
+    margin: 0px -2px;
 }
 
 /* Content */
@@ -139,3 +206,10 @@ ul {
 
 /* Page Specific CSS */
 
+section .col {
+    display: inline-block;
+    width: 12.3%;
+}
+section .col img {
+    width: 100%;
+}

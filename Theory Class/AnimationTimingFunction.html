@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            bottom: 0px;
+            width: 10%;
+            animation: anim-1 10s infinite;
+            /* animation-timing-function: ease; */
+        }
+        img {
+            width: 100%;
+        }
+        #div_1 {
+            left: 0%;
+            animation-timing-function: ease;
+        }
+        #div_2 {
+            left: 10%;
+            animation-timing-function: ease-in;
+        }
+        #div_3 {
+            left: 20%;
+            animation-timing-function: ease-in-out;
+        }
+        #div_4 {
+            left: 30%;
+            animation-timing-function: ease-out;
+        }
+        #div_5 {
+            left: 40%;
+            animation-timing-function: linear;
+        }
+        #div_6 {
+            left: 50%;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        #div_7 {
+            left: 60%;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        #div_8 {
+            left: 70%;
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+        #div_9 {
+            left: 80%;
+            animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        }
+        #div_10 {
+            left: 90%;
+            animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        @keyframes anim-1 {
+            0% {
+                bottom: 0%;
+            }
+            50% {
+                bottom: 80%;
+            }
+            100% {
+                bottom: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div_1">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_2">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_3">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_4">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_5">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_6">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_7">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_8">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_9">
+        <img src="images/Football.png" alt="">
+    </div>
+    <div id="div_10">
+        <img src="images/Football.png" alt="">
+    </div>
+    
+</body>
+</html>

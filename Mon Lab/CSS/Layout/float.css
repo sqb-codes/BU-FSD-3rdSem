@@ -1,0 +1,34 @@
+/* Pseudo Elements - ::after and ::before */
+/* Pseudo Element - fake elements, created on runtime through CSS */
+.row::after {
+    content: "";
+    display: block;     /* because ::after is inline element */
+    clear: both;        /* because we are doing float left and float right */
+}
+
+#section-1 {
+    border: 5px solid red;
+}
+
+.col {
+    height: 300px;
+    width: 40%;
+}
+
+.col-1 {
+    background-color: aqua;
+    float: left;
+}
+
+.col-2 {
+    background-color: lightgreen;
+    float: right;
+}
+
+/* .clear {
+    clear: both;
+} */
+
+#section-2 {
+    border: 5px solid blue;
+}

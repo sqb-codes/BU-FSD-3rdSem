@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            transform: translateX(0%);
+            transition-duration: 1s;
+        }
+        input[value="hide"]:checked ~ img {
+            /* display: none; */
+            transform: translateX(-200%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Checked Selector</h1>
+
+    <input type="radio" name="toggle" value="hide">
+    <label for="">Hide</label>
+
+    <input type="radio" name="toggle" value="show">
+    <label for="">Show</label>
+    <hr>
+    <img src="images/hulk5-18463.gif" alt="">
+    
+</body>
+</html>

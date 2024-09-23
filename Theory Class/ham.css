@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-chk {
+    position: absolute;
+    left: 30%;
+    z-index: 1;
+    display: block;
+    width: 43px;
+    height: 23px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 30%;
+    background-color: transparent;
+    border: none;
+}
+.menu-btn .line {
+    display: block;
+    margin-bottom: 5px;
+    height: 5px;
+    background-color: red;
+    width: 40px;
+    transition-duration: 1s;
+}
+
+
+
+#main-nav {
+    background-color: #000;
+    position: fixed;
+    height: 100%;
+    width: 15%;
+    transform: translateX(-100%);
+    transition-duration: 0.5s;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 40px;
+    font-size: 20px;
+}
+#main-nav ul li a:hover {
+    background-color: red;
+}
+
+.menu-chk:checked ~ #main-nav {
+    transform: translateX(0%);
+}
+
+.menu-chk:checked ~ .menu-btn .line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-chk:checked ~ .menu-btn .line:first-child {
+    transform: rotate(45deg) translate(15px, 13px);
+}
+
+.menu-chk:checked ~ .menu-btn .line:last-child {
+    transform: rotate(-45deg);
+}

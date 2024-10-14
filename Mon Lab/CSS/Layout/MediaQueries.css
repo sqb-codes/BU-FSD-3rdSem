@@ -1,0 +1,35 @@
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col {
+    border: 2px solid red;
+    /* padding: 20px; */
+    background-color: lightgray;
+    width: 25%;
+}
+
+/* Breakpoints
+- xxl - above 1400px
+- xl  - 1400px - 1200px
+- lg  - 1200px - 992px
+- md  - 992px - 768px
+- sm  - 768px - 576px
+- xs  - below 576px */
+
+@media(max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        width: 48%;
+    }
+}
+
+@media(max-width: 576px) {
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

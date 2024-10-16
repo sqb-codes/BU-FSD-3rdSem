@@ -1,0 +1,110 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#header .header-row {
+    display: grid;
+    grid-template-columns: 15% 70% 10%;
+    grid-template-areas: "logo navigation login"
+                         "logo search login";
+    gap: 20px;
+}
+
+.logo {
+    border: 2px solid red;
+    grid-area: logo;
+}
+
+.nav {
+    border: 2px solid blue;
+    grid-area: navigation;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    border: 2px solid rebeccapurple;
+    grid-area: login;
+}
+
+.search {
+    border: 2px solid orange;
+    grid-area: search;
+}
+
+.row {
+    display: grid;
+    /* grid-template-columns: 20% 20% 20% 20% 20%; */
+    grid-template-columns: repeat(5, 18%);
+    gap: 20px;
+    justify-content: center;
+}
+
+.col {
+    background-color: lightgray;
+    /* border: 2px solid red; */
+}
+
+.col-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.col-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.col-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.col-6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.col-9 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+
+/* Media Queries */
+
+/* Breakpoints
+xxl -   above 1400px
+xl  -   1400 - 1200
+lg  -   1200 - 992
+md  -   992 - 768
+sm  -   768 - 576
+xs  -   below 576 */
+
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    #header .header-row {
+        grid-template-columns: 20% 70% 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    #header .header-row {
+        grid-template-columns: 25% 70% 0%;
+    }
+    .login {
+        display: none;
+    }
+}

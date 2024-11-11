@@ -1,0 +1,65 @@
+
+.header-row {
+    display: grid;
+    grid-template-columns: 20% 60% 10%;
+    justify-content: space-between;
+    grid-template-areas: "logo nav login"
+                        "logo search login";
+}
+
+.logo {
+    grid-area: logo;
+    border: 2px solid red;
+}
+#main-nav {
+    grid-area: nav;
+    border: 2px solid blue;
+}
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.login {
+    grid-area: login;
+    border: 2px solid green;
+}
+.search {
+    grid-area: search;
+    border: 2px solid  orange;
+}
+.search input {
+    width: 90%;
+}
+
+.row {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(4, 22%);
+    justify-content: center;
+    gap: 20px;
+}
+
+.col {
+    border: 2px solid red;
+    background-color: lightgray;
+}
+
+.col-2 {
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* grid-column: 2/4; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    /* grid-row: 1/3; */
+
+    /* row-start / column-start / row-end / column-end */
+    grid-area: 1/2/3/4;
+}
+.col-7 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}

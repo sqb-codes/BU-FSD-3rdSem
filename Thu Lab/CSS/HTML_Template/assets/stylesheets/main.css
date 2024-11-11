@@ -1,0 +1,58 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Container - Configurable */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+
+}
+
+/* Navigation */
+#main-nav {
+
+}
+
+/* Banner */
+/* Main */
+/* Footer */

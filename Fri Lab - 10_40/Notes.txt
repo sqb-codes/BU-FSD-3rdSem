@@ -1,0 +1,37 @@
+HTML 4
+- Static web pages
+- Structure of the page
+
+W3C - WWW - World Wide Web
+Tim Berners Lee -> Netscape -> Nexus (Static) -> Brendan Eich -> Mosaic
+
+WCAG
+
+Brendan Eich
+- written JavaScript in 10 days
+- first JS was named as Mocha
+- then launched in market and named LiveScript
+- then collab with Sun Microsystem and named as JavaScript
+
+Mosaic -> Mozilla
+
+Microsoft -> IE -> JScript
+
+JavaScript -> ECMAScript (ES)
+
+HTML 5 -> JavaScript
+- Dynamic web page
+
+CSS
+- Design the page
+
+
+
+
+
+
+
+
+
+
+

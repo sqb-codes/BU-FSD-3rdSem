@@ -1,0 +1,24 @@
+#taskList {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    justify-content: space-between;
+    row-gap: 20px;
+}
+#taskList li {
+    padding: 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.5s;
+}
+#taskList li span {
+    display: block;
+    margin-bottom: 10px;
+}
+#taskList li button {
+    margin-right: 10px;
+}
+#taskList li:hover {
+    transform: scale(1.1, 1.1);
+}

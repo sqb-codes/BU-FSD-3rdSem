@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- 
+        Methods
+        - GET (By Default)
+        - POST
+        - PUT
+        - DELETE
+        - UPDATE
+        - PATCH
+     -->
+    <form action="#" method="POST" enctype="">
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">Enter your name</label>
+                </td>
+                <td>
+                    <input type="text" id="uname" name="username" value="Ravi" placeholder="Enter Name" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your Email ID</td>
+                <td>
+                    <input type="email" autocomplete="off" name="usermail" placeholder="Enter Email ID" autofocus>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter your Password</td>
+                <td>
+                    <input type="password" name="userpwd" placeholder="Enter Password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                    <input type="time">
+                    <input type="datetime-local">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="500" max="1000" onchange="op.value=value">
+                    <output id="op">500</output>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="50" max="100"></progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Search Here</td>
+                <td>
+                    <input type="search" placeholder="Search here">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="country-choice">Choose a country:</label>
+                </td>
+                <td>
+                    <input list="country-options" id="country-choice" name="country-choice">
+                    <datalist id="country-options">
+                        <option value="Australia">
+                        <option value="Austria">
+                        <option value="America">
+                        <option value="Nepal">
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select your city</td>
+                <td>
+                    <select name="city">
+                        <option>Select City</option>
+                        <!-- <option value="mum">Mumbai</option>
+                        <option value="del">Delhi</option>
+                        <option value="noi">Noida</option>
+                        <option value="pun">Pune</option>
+                        <option value="che">Chennai</option> -->
+                        <optgroup label="Maharastra">
+                            <option value="mum">Mumbai</option>
+                            <option value="pun">Pune</option>
+                        </optgroup>
+
+                        <optgroup label="Uttar Pradesh">
+                            <option value="noi">Noida</option>
+                            <option value="luc">Lucknow</option>
+                        </optgroup>
+
+                        <optgroup label="Gujrat">
+                            <option value="noi">Ahemdabad</option>
+                            <option value="luc">Surat</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Profile Pic</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> BBA
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter your comments</td>
+                <td>
+                    <textarea cols="100" rows="10" spellcheck="true"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="/register" method="" enctype="">
+
+    </form>
+
+    <form action="/search" method="" enctype="">
+
+    </form>
+    
+</body>
+</html>

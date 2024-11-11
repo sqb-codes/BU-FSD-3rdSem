@@ -1,0 +1,112 @@
+img {
+    width: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header .header-row {
+    display: grid;
+    grid-template-columns: 15% 70% 10%;
+    grid-template-areas: "logo nav login"
+                         "logo search login";
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.header-row > div {
+    border: 2px solid red;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    grid-area: logo;
+}
+.nav {
+    grid-area: nav;
+}
+.login {
+    grid-area: login;
+}
+.search {
+    grid-area: search;
+}
+
+
+.row {
+    /* display: flex; */
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(4, 22%);
+    justify-content: center;
+    gap: 20px;
+}
+
+.col {
+    border: 2px solid red;
+}
+
+.col-1 {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/3;
+    grid-row: 1/3; */
+
+    /* row-start/col-start/row-end/col-end */
+    grid-area: 1/1/3/3;
+}
+
+.col-3 {
+    grid-row: 1/5;
+    grid-column: 4/5;
+}
+
+.col-6 {
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+/* Media Queries */
+/* Breakpoints */
+/* xxl - above 1400px
+xl  - 1400 - 1200
+lg  - 1200 - 992
+md  - 992  - 768
+sm  - 768  - 576
+xs  - below 576 */
+
+/* this CSS will work for device below 1200px */
+@media(max-width: 1200px) {
+    header .header-row {
+        grid-template-columns: 18% 70% 10%;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 992px) {
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .header-row {
+        display: block;
+    }
+    header .header-row > div{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Form Handling</h1>
+
+    <!-- 
+        Methods
+        - GET (By default)
+        - POST
+        - DELETE
+        - UPDATE
+        - PATCH
+     -->
+     <form action="\register" method="GET" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Enter your name</td>
+                <td>
+                    <input type="text" required name="username" placeholder="Enter name" autofocus>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" required placeholder="Enter Email" value="ravi2@gmail.com" readonly disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter your password</td>
+                <td>
+                    <input type="password" required name="userpwd" placeholder="Enter Password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Enter Age</td>
+                <td>
+                    <input type="number" min="18" max="50">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select State</td>
+                <td>
+                    <select name="" id="">
+                        <option>Select State</option>
+                        <option value="up">UP</option>
+                        <option value="rj">Rajasthan</option>
+                        <option value="hp">Himachal Pradesh</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select City</td>
+                <td>
+                    <select name="" id="">
+                        <option>Select City</option>
+                        <optgroup label="UP">
+                            <option value="">Noida</option>
+                            <option value="">Lucknow</option>
+                            <option value="">Gzb</option>
+                        </optgroup>
+                        
+                        <optgroup label="Rajasthan">
+                            <option value="jp">Jaipur</option>
+                            <option value="">Udaipur</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Mtech
+                    <input type="checkbox"> BCA
+                    <input type="checkbox"> BBA
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Upload Pic</td>
+                <td>
+                    <input type="file" name="pic">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+     </form>
+
+     <form action="\login" method="" enctype="">
+
+     </form>
+
+     <form action="\search" method="" enctype="">
+
+     </form>
+    
+</body>
+</html>

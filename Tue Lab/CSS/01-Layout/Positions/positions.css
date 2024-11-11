@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+#scroll-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 3%;
+}
+#scroll-to-top img {
+    width: 100%;
+}
+
+#header {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 20px 0px;
+    position: fixed;
+    /* bottom: 0px; */
+    top: 0px;
+    width: 100%;
+}
+
+#main-nav {
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+#main-nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    background-color: black;
+    width: 15%;
+    text-align: center;
+    position: relative;
+}
+#main-nav ul li a {
+    display: block;
+    padding: 15px 0px;
+    text-decoration: none;
+    color: #fff;
+}
+#main-nav ul li:hover {
+    background-color: red;
+}
+#main-nav .dropdown {
+    position: absolute;
+    background-color: darkblue;
+    width: 100%;
+    left: 0px;
+    display: none;
+}
+#main-nav ul li:hover .dropdown {
+    display: block;
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E6E3;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 15px 0px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    /* bottom: 0px; */
+    z-index: 1;
+}
+
+#header .col-1 {
+    float: left;
+    width: 20%;
+}
+
+#header .col-2 {
+    float: right;
+    width: 50%;
+}
+
+#main-nav ul {
+    list-style: none;
+    position: relative;
+}
+
+#main-nav > ul > li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    padding-top: 10px;
+}
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 30px;
+}
+
+#main-nav .dropdown {
+    position: absolute;
+    width: 200%;
+    background-color: #000;
+    left: 0px;
+    display: none;
+}
+
+#main-nav ul li:hover .dropdown {
+    display: block;
+}
+
+#main-nav .dropdown ul li a{
+    padding: 20px 0px;
+}
+
+#main-nav .dropdown ul li:hover {
+    background-color: red;
+}
+
+#banner {
+    margin-top: 100px;
+    text-align: center;
+}
+#banner img {
+    width: 100%;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.widget h2 {
+    margin-bottom: 15px;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E3E6E3;
+}
+
+#sidebar-1 {
+    width: 20%;
+}
+
+#sidebar-1 .widget {
+    position: sticky;
+    top: 100px;
+}
+
+#main {
+    width: 55%;
+    margin-left: 2.5%;
+}
+#main img {
+    width: 100%;
+}
+#main section {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#sidebar-2 {
+    width: 20%;
+}
+#sidebar-2 img {
+    width: 100%;
+}

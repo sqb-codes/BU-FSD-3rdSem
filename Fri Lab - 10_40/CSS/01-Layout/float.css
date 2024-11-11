@@ -1,0 +1,36 @@
+/* Universal Selector */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    border: 6px solid black;
+}
+
+/* Pseudo Element - :after, :before */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col {
+    height: 300px;
+}
+.col-1 {
+    /* background-color: lightcoral; */
+    width: 40%;
+    float: left;
+    border: 5px solid red;
+}
+.col-2 {
+    /* background-color: lightgreen; */
+    width: 40%;
+    float: right;
+    border: 5px solid blue;
+}
+
+.next {
+    background-color: lightsalmon;
+}

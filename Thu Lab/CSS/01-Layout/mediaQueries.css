@@ -1,0 +1,76 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 15% 70% 10%;
+    grid-template-areas: "logo navigation login"
+                         "logo search login";
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.col {
+    border: 2px solid red;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav {
+    grid-area: navigation;
+}
+
+.search {
+    grid-area: search;
+}
+
+.login {
+    grid-area: login;
+}
+
+
+/* Media Queries */
+
+/* 
+* Breakpoints
+* xxl  - above 1400px
+* xl   - 1400 - 1200
+* lg   - 1200 - 992
+* md   - 992 - 768
+* sm   - 768 - 576
+* xs   - below 576
+*/
+
+@media(max-width: 1400px) {
+    h1 {
+        font-size: 28px;
+    }
+    .header-row {
+        grid-template-columns: 18% 70% 10%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .header-row {
+        grid-template-columns: 20% 65% 10%;
+    }
+}
+
+@media(max-width: 992px) {
+    h1 {
+        font-size: 20px;
+    }
+    .header-row {
+        grid-template-columns: 18% 70% 10%;
+    }
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .row {
+    border: 5px solid green;
+} */
+
+/* 
+    Pseudo Element
+    - ::after
+    - ::before
+*/
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#section-1 {
+    padding: 15px;
+    border: 5px solid green;
+}
+
+/* 
+    Float - left | right;
+*/
+
+.col {
+    height: 300px;
+}
+
+.col-1 {
+    background-color: lightcoral;
+    border: 5px solid red;
+    width: 40%;
+    float: left;
+}
+
+.col-2 {
+    background-color: lightgreen;
+    border: 5px solid blue;
+    width: 40%;
+    float: right;
+}
+
+#next-div {
+    border: 5px solid brown;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* .blank {
+    clear: both;
+} */

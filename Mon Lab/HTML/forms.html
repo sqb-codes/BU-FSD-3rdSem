@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Form Handling</h1>
+
+    <!-- Login Form -->
+    <!-- <form action="/login" method="" enctype="">
+        <input type="submit" value="Login">
+    </form> -->
+
+    <!-- Registration Form -->
+     <!-- 
+        Methods - GET, POST, PUT, DELETE, UPDATE, PATCH
+     -->
+    <form action="/register" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Enter Username</td>
+                <td>
+                    <input type="text" name="username" placeholder="Enter username" required autofocus>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td>
+                    <input type="email" name="email" placeholder="Enter email" required value="ram@gmail.com" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="pwd" placeholder="Enter password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter your age</td>
+                <td>
+                    <input type="number" min="18" max="60">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td>
+                    <input type="date">
+                    <input type="time">
+                    <input type="datetime-local">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Range</td>
+                <td>
+                    <input type="range" value="500" min="100" max="1000" onchange="op.value=value" step="50">
+                    <output id="op">500</output>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Mobile No</td>
+                <td>
+                    <input type="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>Search</td>
+                <td>
+                    <input type="search" placeholder="Search Here">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Progress</td>
+                <td>
+                    <progress value="70" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Profile Pic</td>
+                <td>
+                    <input type="file" name="pic">
+                </td>
+            </tr>
+            <tr>
+                <td>Select Gender</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Country</td>
+                <td>
+                    <select name="country" id="">
+                        <option>Select Country</option>
+                        <!-- <option value="ch">China</option>
+                        <option value="in">India</option>
+                        <option value="fr">France</option>
+                        <option value="it">Italy</option>
+                        <option value="en">England</option> -->
+                        <optgroup label="Asia">
+                            <option value="ch">China</option>
+                            <option value="in">India</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="fr">France</option>
+                            <option value="it">Italy</option>
+                            <option value="en">England</option> 
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select Course</td>
+                <td>
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Btech
+                    <input type="checkbox"> Btech
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Search Form -->
+    <!-- <form action="/search" method="" enctype="">
+        <input type="submit" value="Search">
+    </form> -->
+
+</body>
+</html>

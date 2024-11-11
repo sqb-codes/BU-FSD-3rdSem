@@ -1,0 +1,158 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* Common Settings */
+
+/* Header */
+#header {
+    background-color: #fff;
+}
+
+#header .col-1 {
+    width: 60%;
+}
+
+#header .logo {
+    width: 15%;
+}
+
+#header .search {
+    width: 82%;
+    padding-top: 15px;
+    position: relative;
+}
+
+#header .search input[type="text"] {
+    width: 90%;
+    height: 30px;
+    border: 1px solid #aaa;
+    padding-left: 30px;
+    border-radius: 3px;
+}
+
+#header .search button {
+    position: absolute;
+    left: 10px;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+}
+
+#header .col-2 {
+    width: 25%;
+    padding-top: 20px;
+}
+
+#header .col-2 .col {
+    display: inline-block;
+    margin: 0px 10px;
+    text-align: center;
+}
+#header .col-2 button {
+    background-color: #F84464;
+    color: #fff;
+    width: 100px;
+    border: none;
+    padding: 7px 0px;
+    border-radius: 5px;
+}
+
+
+/* Header Bottom */
+#header-bottom {
+    background-color: #F5F5F5;
+    padding: 10px 0px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#header-bottom .col-1 {
+    width: 40%;
+}
+
+#header-bottom .col-2 {
+    width: 30%;
+}
+
+#header-bottom .nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#header-bottom .nav ul li a {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+
+/* Main-Navigation */
+#main-navigation {
+
+}
+
+/* Banner */
+#banner {
+
+}
+
+/* Content */
+#content {
+
+}
+
+/* Footer */
+#footer {
+
+}
+
+/* *********************** */
+
+/* Page Specific CSS */
+/* Home Page CSS */

@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+
+    /* align-items: stretch; */
+    align-items: flex-start;
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+}
+
+.col {
+    background-color: lightgray;
+    border: 2px solid red;
+}
+
+.col-1 {
+    /* width: 15%; */
+    /* flex-basis: 15%; */
+    flex-basis: 0.5;
+    flex-shrink: 2;
+}
+.col-2 {
+    /* width: 50%; */
+    /* flex: basis | shrink | grow; */
+    /* flex-basis: 50%; */
+    flex-basis: 1.7;
+    flex-grow: 2;
+}
+.col-3 {
+    /* width: 20%; */
+    /* align-self: center; */
+    /* flex-basis: 20%; */
+    flex-basis: 0.8;
+}
+
+#section-2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 20px; */
+    row-gap: 20px;
+    column-gap: 20px;
+}
+#section-2 ul li {
+    width: 280px;
+    /* margin-left: 20px;
+    margin-bottom: 20px; */
+}

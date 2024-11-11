@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-size: 20px;
+        }
+        @media(max-width:1200px) {
+            :root {
+                font-size: 16px;
+            }
+        }
+        @media(max-width:992px) {
+            :root {
+                font-size: 12px;
+            }
+        }
+        @media(max-width:768px) {
+            :root {
+                font-size: 10px;
+            }
+        }
+        * {
+            margin: 0px;
+        }
+        img {
+            /* width: 100vmin; */
+            /* width: 100vmax; */
+            /* height: 100vmax; */
+            height: 100vmin;
+            width: 100vmax;
+            /* height: 600px; */
+            /* object-fit: contain; */
+            object-fit: cover;
+        }
+        p {
+            /* font-size: 20px; */
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Units in CSS</h1>
+
+    <div id="parent">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aperiam est dicta quae odio illum! In fugit sed minus veritatis suscipit obcaecati tenetur nesciunt, iusto reprehenderit iure architecto, molestiae repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo dolores ipsum animi voluptates, at consequatur inventore rerum labore quo ratione nam reprehenderit doloremque perferendis possimus, facilis, adipisci laborum ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio ut ducimus, nemo praesentium eius adipisci nihil! Asperiores culpa quibusdam excepturi, nam necessitatibus rerum, velit eum, est minima minus eveniet.
+        </p>
+        <hr>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse cupiditate aliquid veniam repellendus tempore odit ullam quasi molestiae, error laborum ex consequatur harum soluta repellat dolores non! Debitis, ducimus explicabo?
+        </p>
+        <hr>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quia nostrum eum praesentium tempora facere doloremque illum, impedit maxime modi ullam placeat et. Possimus, minus pariatur earum officiis suscipit eaque?
+        </p>
+    </div>
+
+    <!-- 
+        2 types of Units
+        - Absolute
+          - px - pixel
+          - cm - centimeter = 1cm = 37.8px
+          - mm - millimeter = 1/10th of 1cm
+          - in - inches = 1in = 96px
+          - pc - pica = 1/6th of 1in
+          - pt - points = 1/72 of 1in
+        
+        - Relative
+          - %
+          - em = 1em = base size = 16px (by default)
+          - rem = relative em - relative to font-size of root element
+          - ex = relative to x-height of font
+          - vh = viewport height
+          - vw = viewport width
+          - vmin = viewport min = relative to smaller dimension
+          - vmax = viewport max = relative to larger dimension
+     -->
+
+     <!-- <img src="images/images/l34882-ironman-rigged-original-model--98611.jpg" alt=""> -->
+    
+</body>
+</html>

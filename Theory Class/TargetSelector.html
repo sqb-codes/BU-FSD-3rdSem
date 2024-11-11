@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #login {
+            /* display: none; */
+            position: absolute;
+            left: 36%;
+            background-color: rgba(148, 147, 147, 0.5);
+            padding: 100px;
+            transform: translateY(-200%);
+            transition-duration: 1s;
+            opacity: 0;
+        }
+        #login:target {
+            /* display: block; */
+            transform: translateY(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Target Selector</h1>
+
+    <a href="#login">Login</a>
+
+    <div id="login">
+        <h2>Login User</h2>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Enter Email</td>
+                    <td>
+                        <input type="email" placeholder="Enter Email ID">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Enter Password</td>
+                    <td>
+                        <input type="password" placeholder="Enter Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Login">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <a href="#">Close</a>
+    </div>
+    
+</body>
+</html>

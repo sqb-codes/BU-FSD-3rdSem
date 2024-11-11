@@ -1,0 +1,23 @@
+.row {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.col {
+    background-color: lightgray;
+    border: 2px solid red;
+    /* height: 300px; */
+}
+
+.col-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.col-4 {
+    /* grid-column-start: 2; */
+    /* grid-column-end: 4; */
+}

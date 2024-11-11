@@ -1,0 +1,26 @@
+#section-1 {
+    margin-bottom: 40px;
+}
+
+#taskList {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#taskList li {
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 20%;
+}
+#taskList li button {
+    margin: 10px 10px 10px 0px;
+}
+#taskList li span {
+    /* color: #999; */
+    font-size: 14px;
+}
+#taskList li button + p {
+    color: #999;
+    font-size: 14px;
+}

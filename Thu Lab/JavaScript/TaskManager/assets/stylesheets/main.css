@@ -1,0 +1,28 @@
+#taskList {
+    margin: 20px 0px;
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    justify-content: space-evenly;
+    gap: 20px;
+}
+#taskList li {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+#taskList li h5 {
+    font-size: 14px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#taskList li p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+#taskList li .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="assets/stylesheets/main.css">
 
-    <script src="assets/javascripts/taskController.js"></script>
+    <script src="assets/javascripts/taskModel.js" defer></script>
+    <script src="assets/javascripts/taskController.js" defer></script>
 </head>
 <body>
 
@@ -89,6 +90,22 @@
 
       <section id="taskWrapper">
         <div class="container">
+          <div>
+            Sort Task Based On : 
+            <select id="sortCriteria">
+              <option value="createdOn">Created On</option>
+              <option value="startDate">Start Date</option>
+              <option value="endDate">End Date</option>
+            </select>
+
+            <select id="sortOrder">
+              <option value="asc">Ascending</option>
+              <option value="desc">Descending</option>
+            </select>
+
+            <button class="btn btn-secondary">Sort Data</button>
+          </div>
+
             <ul id="taskList">
 
             </ul>

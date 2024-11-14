@@ -29,11 +29,30 @@ var taskObject = {
         console.log(this.taskArray);
     },
 
-    deleteTask : function() {
+    deleteTask : function(id) {
+        // this.taskArray = this.taskArray.filter(function(item) {
+        //     return item.taskId != id;
+        // });
 
+        this.taskArray = this.taskArray.filter((item) => {
+            return item.taskId != id;
+        });
     },
 
     udpateTask : function() {
 
+    },
+
+    sortTask : function(criteria, order) {
+        if(order == "asc") {
+            this.taskArray = this.taskArray.sort((a,b) => {
+                return new Date(a[criteria]) - new Date(b[criteria]);
+            });
+        } else {
+            this.taskArray = this.taskArray.sort((a,b) => {
+                return new Date(b[criteria]) - new Date(a[criteria]);
+            });
+        }
+        console.log(this.taskArray);
     }
 }

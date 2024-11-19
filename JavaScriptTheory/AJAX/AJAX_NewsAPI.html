@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        ul li  {
+            width: 24%;
+        }
+        ul li img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>News API Demo</h1>
+
+    <button onclick="loadNews()">Load News Data</button>
+
+    <ul id="news">
+
+    </ul>
+
+    <script>
+        function loadNews() {
+            var url = "https://newsapi.org/v2/everything?q=tesla&from=2024-10-11&sortBy=publishedAt&apiKey=695e07af402f4b119f0703e9b19f4683"
+
+            // Older version of AJAX
+            // var xhttp = new XMLHttpRequest();
+            // xhttp.onreadystatechange = function() {
+            //     console.log("Ready State : " + this.readyState);
+            //     console.log("Ready State : " + this.status);
+            //     console.log(this.responseText);
+            // }
+            // xhttp.open("get", url);
+            // xhttp.send();
+
+            // Newer version of AJAX code
+            fetch(url)
+            .then(response => {
+                // check if we got the response successfully
+                if(!response.ok) {
+                    throw new Error("Data not found");
+                }
+                return response.json();
+            })
+            .then(data => {
+                // console.log(data);
+                var articles = data.articles;
+                var ul = document.querySelector("#news");
+                for(var item of articles) {
+                    var li = document.createElement("li");
+                    var img = document.createElement("img");
+                    li.innerText = item.title;
+                    img.setAttribute("src", item.urlToImage);
+                    li.appendChild(img);
+                    ul.appendChild(li);
+                }
+                
+            })
+            .catch(error => {
+                console.error("Error while fetching data..." + error);
+            });
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+Full stack
+- Front-End
+- Back-End
+- Database
+- Deployment (Git, Cloud, Docker(Optional))
+
+Sofware
+- Java / .net / Python / ElectronJS
+
+Web Application
+- Front-End - HTML / CSS / JavaScript
+- Back-End - Java / .net / Python / php / Node
+
+Mobile Application
+- Flutter / Java / Swift / React Native
+
+AI
+- Python / JavaScript
+
+Online Gaming - Web Based
+
+
+JavaScript
+- Client-Side + Server Side dynamically typed scripting language
+
+
+Netscape - organization
+- Nexus - static web browser
+
+- Brendan Eich - self + scheme + java + python = JavaScript
+
+- written JS in 10 days
+- Mocha - first name of JavaScript
+- LiveScript - launched with this name in market
+- Netscape collab with Sun microsystem and named it as JavaScript
+- Mosaic - dynamic web browser
+- then Mosaic became Mozilla
+
+- then Netscape handed over JS to ECMA and named it as ECMAScript
+
+
+- 2009 - Ryan Dahl - launched NodeJS (JavaScript as back-end programming)
+- introduced single-threaded back-end programming
+
+
+Features of JavaScript
+- Interpreted Programming
+- Dynamically Typed
+- Loosely Typed Language
+- Event Driven - click, load, blur, change, submit, keypress
+- DOM (Document Object Model) and BOM (Browser Object Model)
+- Multi-Paradigm - Procedural + Object Oriented + Functional
+- OOJS
+
+V8Engine - Compiler of JS - Builtin inside Chrome
+
+
+Compiler
+Interpreter
+
+
+Counter Example
+Basic Calculator
+
+Functions
+- first class citizens
+- nested functions
+- pass function as an argument
+- return a function from a function
+- variable length arguments
+
+
+Closures
+IIFE
+Variable hoisting
+Memoization
+Ways to define functions

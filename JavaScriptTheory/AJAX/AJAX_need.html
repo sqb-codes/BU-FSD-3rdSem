@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>AJAX Need</h1>
+    <button onclick="load()">Load Data</button>
+
+
+    <script>
+        function getTemp() {
+            console.log("Get temp data");
+        }
+
+        function getCricketScore() {
+            for(var i = 0; i < 100000; i++) {
+                for(var j = 0; j < 100000; j++) {
+                    var k = i + j;
+                }
+            }
+            console.log("Get cricket score data");
+        }
+
+        function getStock() {
+            console.log("Get stock market data");
+        }
+
+        function getNews() {
+            console.log("Get news data");
+        }
+
+        function load() {
+            getNews();
+            
+            setTimeout(function() {
+                getCricketScore();
+            }, 2000);
+
+            getStock();
+            getTemp();
+        }
+    </script>
+    
+</body>
+</html>

@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="assets/stylesheets/main.css">
 
-    <script src="assets/javascripts/taskModel.js"></script>
-    <script src="assets/javascripts/taskController.js"></script>
+    <script src="assets/javascripts/taskModel.js" defer></script>
+    <script src="assets/javascripts/taskController.js" defer></script>
 
 </head>
 <body>
@@ -91,6 +91,29 @@
 
       <section id="section-2">
         <div class="container">
+            <div class="sort-section mb-4">
+              <div class="row align-items-center">
+                <div class="col-md-1">
+                  <span>Sort Task</span>
+                </div>
+                <div class="col-md-3">
+                  <select id="sortCriteria" class="form-control">
+                    <option value="startDate">Start Date</option>
+                    <option value="endDate">End Date</option>
+                    <option value="createdOn">Created On</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <select id="sortOrder" class="form-control">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <button id="sortTask" class="btn btn-secondary">Sort Task</button>
+                </div>
+              </div>
+            </div>
             <ul id="taskList" class="list-group">
 
             </ul>

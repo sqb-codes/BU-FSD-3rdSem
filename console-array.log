@@ -1,0 +1,98 @@
+x = [4,5,6,2,2,6,78,8,12];
+(9) [4, 5, 6, 2, 2, 6, 78, 8, 12]
+var product = {p_id:101, p_name:"Apple IPhone 15", p_price:80000};
+undefined
+product
+{p_id: 101, p_name: 'Apple IPhone 15', p_price: 80000}p_id: 101p_name: "Apple IPhone 15"p_price: 80000[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+product instanceof Object
+true
+Object
+ƒ Object() { [native code] }
+product.p_id
+101
+product["rating"] = 4.5;
+4.5
+product
+{p_id: 101, p_name: 'Apple IPhone 15', p_price: 80000, rating: 4.5}
+var product = {
+    id : 101,
+    name : "Apple Macbook Pro",
+    price : 150000,
+    show : function() {
+        console.log("Product name is : " + name);
+    }
+}
+undefined
+product.name
+'Apple Macbook Pro'
+product.show();
+VM711:6 Product name is : 
+undefined
+var name = "Ram"l
+VM842:1 Uncaught SyntaxError: Unexpected identifier 'l'
+var name = "Ram";
+undefined
+product.show();
+VM711:6 Product name is : Ram
+undefined
+var product = {
+    id : 101,
+    name : "Apple Macbook Pro",
+    price : 150000,
+    show : function() {
+        console.log("Product name is : " + this.name);
+    }
+}
+undefined
+product.show();
+VM881:6 Product name is : Apple Macbook Pro
+undefined
+var products = [
+    {id:101, name:"Apple macbook", brand:"Apple", price:160000},
+    {id:102, name:"Samsung galaxy", brand:"Samsung", price:56000},
+    {id:103, name:"Apple Iphone 16", brand:"Apple", price:120000},
+    {id:104, name:"Samsung TV", brand:"Samsung", price:56000}
+]
+undefined
+for(var i = 0; i < products.length; i++) {
+    if(products[i].brand == "Apple") {
+        console.log(products[i]);
+    }
+}
+VM1353:3 {id: 101, name: 'Apple macbook', brand: 'Apple', price: 160000}
+VM1353:3 {id: 103, name: 'Apple Iphone 16', brand: 'Apple', price: 120000}
+undefined
+for(var item of products) {
+    if(item.brand == "Apple") {
+        console.log(item);
+    }
+}
+VM1454:3 {id: 101, name: 'Apple macbook', brand: 'Apple', price: 160000}
+VM1454:3 {id: 103, name: 'Apple Iphone 16', brand: 'Apple', price: 120000}
+undefined
+products.forEach(function(item) {
+    if(item.brand == "Apple") {
+        console.log(item);
+    }
+})
+VM1580:3 {id: 101, name: 'Apple macbook', brand: 'Apple', price: 160000}
+VM1580:3 {id: 103, name: 'Apple Iphone 16', brand: 'Apple', price: 120000}
+undefined
+products.filter(function(item) {
+    return item.brand == "Apple";
+})
+(2) [{…}, {…}]
+(a,b) => a + b;
+(a,b) => a + b
+var add = (a,b) => a + b;
+undefined
+add
+(a,b) => a + b
+add(4,5)
+9
+products.filter((item) => item.brand == "Apple");
+(2) [{…}, {…}]
+products.map((item) => item.brand == "Apple");
+(4) [true, false, true, false]
+products.map((item) => item.price - 10000);
+(4) [150000, 46000, 110000, 46000]

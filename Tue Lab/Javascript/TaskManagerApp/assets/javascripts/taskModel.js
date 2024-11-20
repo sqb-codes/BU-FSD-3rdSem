@@ -32,8 +32,12 @@ var taskObject = {
         console.log(this.taskArray);
     },
 
-    deleteTask : function() {
+    deleteTask : function(id) {
+        // this.taskArray = this.taskArray.filter(function(obj) {
+        //     return obj.id != id;
+        // });
 
+        this.taskArray = this.taskArray.filter((obj) => obj.id != id);
     },
 
     updateTask : function() {
@@ -44,7 +48,11 @@ var taskObject = {
 
     },
 
-    sortTask : function() {
-
+    sortTask : function(sortCriteria, sortOrder) {
+        if(sortOrder == "asc") {
+            this.taskArray = taskObject.taskArray.sort((a,b) => new Date(a[sortCriteria]) - new Date(b[sortCriteria]));
+        } else {
+            this.taskArray = taskObject.taskArray.sort((a,b) => new Date(b[sortCriteria]) - new Date(a[sortCriteria]));
+        }
     }
 }

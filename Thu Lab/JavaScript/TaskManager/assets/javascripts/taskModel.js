@@ -47,11 +47,16 @@ var taskObject = {
 
     },
 
-    searchTask : function() {
-
+    searchTask : function(searchValue) {
+        
     },
 
-    sortTask : function() {
+    sortTask : function(sortCriteria, sortOrder) {
         // taskObject.taskArray.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+        if(sortOrder == "asc") {
+            this.taskArray = taskObject.taskArray.sort((a, b) => new Date(a[sortCriteria]) - new Date(b[sortCriteria]));
+        } else {
+            this.taskArray = taskObject.taskArray.sort((a, b) => new Date(b[sortCriteria]) - new Date(a[sortCriteria]));
+        }
     }
 }

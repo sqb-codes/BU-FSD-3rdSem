@@ -6,6 +6,8 @@
 
 function bindEvents() {
     document.querySelector("#addNewTaskBtn").addEventListener("click", addNewTask);
+    document.querySelector("#sortTask").addEventListener("click", sortTask);
+    document.querySelector("#searchBox").addEventListener("keyup", searchTask);
 }
 
 function addTaskItem(tagName, taskText) {
@@ -68,6 +70,13 @@ function showTask() {
 
 }
 
+function searchTask(){
+    var searchValue = this.value;
+    console.log(searchValue);
+    taskObject.searchTask(searchValue);
+}
+
+
 function deleteTask() {
     var taskId = parseInt(this.title);
     taskObject.deleteTask(taskId);
@@ -79,18 +88,27 @@ function updateTask() {
     taskObject.updateTask();
 }
 
+function sortTask() {
+    var sortCriteria = document.querySelector("#sortCriteria").value;
+    var sortOrder = document.querySelector("#sortOrder").value;
+    taskObject.sortTask(sortCriteria, sortOrder);
+    showTask();
+}
+
 function saveTask() {
     // stringify - will convert Array of object into a string
     // because localstorage don't understand array and any other data type
     // localstorage only understand string type of data
     var data = JSON.stringify(taskObject.taskArray);
-    localStorage.setItem("taskArray", data);
+    localStorage.setItem("taskList", data);
 }
 
 function loadTask() {
-    var data = localStorage.getItem("taskArray");
-    taskObject.taskArray = JSON.parse(data);
-    showTask();
+    if(localStorage.taskList) {
+        var data = localStorage.getItem("taskList");
+        taskObject.taskArray = JSON.parse(data);
+        showTask();
+    }
 }
 
 bindEvents();

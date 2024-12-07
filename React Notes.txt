@@ -1,0 +1,138 @@
+Introduction to React
+
+What is React ?
+- open-source JavaScript library
+- mainly used for creating dynamic front-end / UI
+- create reusable components and manage state of their applications
+- single page application
+
+- appeared in 2013 
+- declarative, component based library
+
+Which companies are using React ?
+- Facebook
+- Netflix
+- Airbnb
+
+1. Component Based
+2. Virtual DOM
+3. Cross Platform Development
+4. Declarative Nature
+
+
+Pros
+- Performance - Virtual DOM
+- Flexible
+- SEO-Friendly
+
+Cons
+- Incomplete
+- Rapid Change
+- Learning Curve
+
+==========================================================
+
+Roadmap of learning React
+1. Pre-requisite - HTML, CSS, JS (ES6+ like destructuring, classes)
+2. Fundamentals - JSX, Components, Props and state
+3. Core Concepts - Hooks, Event Handling, Conditional rendering
+4. List and Keys Concepts
+5. Advanced Topics - Context API for state management, SSR with Node
+6. Tools and Ecosystem - Router, State management (Redux, Zustand), Jest
+7. Projects
+
+==========================================================
+
+How react works ?
+- In-memory Virtual DOM rather than directly manipulating browser's DOM
+
+Virtual DOM
+- lightweight copy of actual DOM
+
+Re-rendering
+- DOM updates the whole structure
+- Virtual DOM selectively updates only changed elements
+
+What is Virtual DOM ?
+The virtual DOM is a lightweight copy of the real DOM that allows React to manage changes more efficiently by minimizing the direct manipulation required on the real DOM. This process significantly enhances the performance of web apps.
+
+The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.
+This approach enables the declarative API of React: You tell React what state you want the UI to be in, and it makes sure the DOM matches that state. This abstracts out the attribute manipulation, event handling, and manual DOM updating that you would otherwise have to use to build your app.
+
+Here's a step-by-step process of how the virtual DOM works:
+
+Step 1 – Initial Rendering: when the app starts, the entire UI is represented as a Virtual DOM. React elements are created and rendered into the virtual structure.
+Step 2 – State and Props Changes: as the states and props change in the app, React re-renders the affected components in the virtual DOM. These changes do not immediately impact the real DOM.
+Step 3 – Comparison Using Diff Algorithm: React then uses a diffing algorithm to compare the current version of the Virtual DOM with the previous version. This process identifies the differences (or "diffs") between the two versions.
+Step 4 – Reconciliation Process: based on the differences identified, React determines the most efficient way to update the real DOM. Only the parts of the real DOM that need to be updated are changed, rather than re-rendering the entire UI. This selective updating is quick and performant.
+Step 5 – Update to the Real DOM: finally, React applies the necessary changes to the real DOM. This might involve adding, removing, or updating elements based on the differences detected in step 3.
+
+
+==========================================================
+
+Environment Setup - Installation of React
+1. install node.js
+
+
+npm
+- node package manager
+- package manager for JS bundled with Node
+- Manage dependencies
+- used when we want to install, manage or update dependencies of a project
+
+npx
+- Node package executor
+- execute packages directly from command line
+- useful for executing packages directly without need for global installations
+
+Create React Application
+- npx create-react-app my-first-app
+
+: npm install -g create-react-app
+: create-react-app my-first app
+
+
+JSX - JavaScript Syntax Extension / JavaScript XML
+- Combines HTML and JS
+
+JSX stands for JavaScript XML. JSX is used to write the HTML-like code in JavaScript.
+
+JSX is basically a syntax extension of JavaScript. React JSX helps us to write HTML in JavaScript and forms the basis of React Development. Using JSX is not compulsory but it is highly recommended for programming in React as it makes the development process easier as the code becomes easy to write and read. 
+
+Create Element Using JS
+const msg = "JS"
+var div = document.createElement("div");
+div.className = "section-1";
+div.innerText = "Hello " + msg;
+
+Create Element Using JSX
+const msg = "React";
+const element = <div className="section-1">Hello {msg}</div>
+
+This is called JSX (JavaScript XML), it somewhat looks like HTML and also uses a JavaScript-like variable but is neither HTML nor JavaScript. With the help of JSX, we have directly written the HTML syntax in JavaScript.
+
+Why JSX?
+React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
+
+Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.
+
+
+Components in React
+React Components are the building blocks of ReactJS application. They help to break the user interface into smaller, reusable chunks, making the code easier to manage and maintain. Components can be class-based or function-based, and each type plays an important role in building dynamic and interactive web applications.
+
+Types of Components in React
+In React, we mainly have two types of components:
+
+1. Functional Components
+2. Class based Components
+
+Functional Component in React
+Functional components are just like JavaScript functions that accept properties and return a React element. We can create a functional component in React by writing a JavaScript function.
+
+Class Component in React
+The class components are a little more complex than the functional components. A class component can show inheritance and access data of other components.
+Class Component must include the line “extends React.Component” to pass data from one class component to another class component. We can use JavaScript ES6 classes to create class-based components in React.
+
+
+
+

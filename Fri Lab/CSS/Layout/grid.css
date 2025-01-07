@@ -1,0 +1,109 @@
+img {
+    width: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+.header-row > div {
+    border: 2px solid red;
+}
+
+.header-row {
+    display: grid;
+    grid-template-columns: 20% 60% 10%;
+    grid-template-areas: "logo nav login"
+                         "logo search login";
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.login {
+    grid-area: login;
+}
+
+.search {
+    grid-area: search;
+}
+
+.col {
+    background-color: lightgray;
+    border: 2px solid red;
+}
+
+.row {
+    display: grid;
+    /* grid-template-columns: 33% 33% 33%; */
+    grid-template-columns: repeat(4, 25%);
+}
+
+.col-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.col-3 {
+    grid-column: 4/5;
+    grid-row: 1/5;
+}
+
+.col-7 {
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+/* Media Queries */
+
+/* Breakpoints */
+/* xxl - above 1400px
+xl  - 1400 - 1200
+lg  - 1200 - 992
+md  - 992  - 768
+sm  - 768  - 576
+xs  - below 576px */
+
+/* this css will be executed on devices below 1200px */
+@media(max-width:1200px) {
+    .header-row {
+        grid-template-columns: 22% 60% 10%;
+    }
+    .logo h1 {
+        font-size: 24px;
+    }
+}
+
+/* this css will be executed on devices below 992px */
+@media(max-width:992px) {
+    .header-row {
+        grid-template-columns: 24% 60% 10%;
+    }
+    .logo h1 {
+        font-size: 20px;
+    }
+}

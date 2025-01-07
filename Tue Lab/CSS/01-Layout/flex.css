@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    /* display: inline-flex; */
+
+    /* adjust columns left and right */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+
+    /* adjust columns vertically */
+    align-items: stretch;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+}
+
+.col {
+    border: 2px solid red;
+    background-color: lightgray;
+}
+
+.col-1 {
+    /* width: 15%; */
+    /* flex: basis | grow | shrink */
+    flex-basis: 15%;
+}
+
+.col-2 {
+    /* width: 50%; */
+    /* align-self: center; */
+    flex-basis: 50%;
+    flex-grow: 0.3;
+}
+
+.col-3 {
+    /* width: 25%; */
+    flex-basis: 25%;
+}
+
+#section-2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#section-2 ul li {
+    width: 280px;
+}

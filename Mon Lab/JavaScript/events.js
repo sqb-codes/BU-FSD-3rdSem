@@ -32,6 +32,7 @@ function validateName() {
 }
 
 function validateEmail() {
+    // var pattern = /[a-z|0-9|\.]+@[a-z]+\.[a-z]{2,3}/;
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var emailId = this.value;
     var errMsg = document.querySelector("#err-2");

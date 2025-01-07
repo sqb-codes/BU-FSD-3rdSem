@@ -1,0 +1,20 @@
+#taskList {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#taskList li {
+    width: 300px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+#taskList li span {
+    display: block;
+}
+
+#taskList li button {
+    margin-right: 10px;
+}

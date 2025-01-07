@@ -1,0 +1,13 @@
+Task Manager Application
+
+- CRUD - Create Read Update Delete
+- MVC - Model View Controller
+
+View - UI
+Model - Business Logic
+Controller - Connect Model with View
+
+OOJS - Object Oriented JavaScript
+Localstorage
+Boostrap
+

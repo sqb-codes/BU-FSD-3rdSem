@@ -1,0 +1,16 @@
+Task Manager Application / ToDo List
+
+CRUD - Create Read Update Delete
+
+MVC - Model View Controller
+View - UI
+Model - Busniess Logic / Primary Logic
+Controller - Bridge b/w View and Model
+
+OOJS - Object Oriented JS
+
+Boostrap
+- Responsive (Mobile Friendly) web design framework
+- was introduced by Twitter in 2011
+
+

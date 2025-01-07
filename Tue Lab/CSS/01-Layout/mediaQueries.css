@@ -1,0 +1,41 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col {
+    border: 2px solid;
+    background-color: lightgray;
+    width: 15%;
+    text-align: center;
+}
+
+
+/* Breakpoints
+- xxl - above 1400px
+- xl  - 1400 - 1200
+- lg  - 1200 - 992
+- md  - 992 - 768
+- sm  - 768 - 576
+- xs  - below 576 */
+
+@media(max-width: 1200px) {
+    .row {
+        row-gap: 20px;
+    }
+    .col {
+        width: 31%;
+    }
+}
+
+@media(max-width: 768px) {
+    .col {
+        width: 48%;
+    }
+}
+
+@media(max-width: 576px) {
+    .col {
+        width: 98%;
+    }
+}
